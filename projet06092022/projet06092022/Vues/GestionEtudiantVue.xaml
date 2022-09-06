@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projet06092022.Vues.GestionEtudiantVue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nom de l'étudiant"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry  x:Name="NomEtudiant" Placeholder="Saisir un nom"
+                   Text="{Binding E1.Nom}"/>
+            <Entry  x:Name="PrenomEtudiant" Placeholder="Saisir un prenom"
+                   Text="{Binding E1.Prenom}"/>
+            <Label x:Name="Compteur" Text=""
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Afficher le nom" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
